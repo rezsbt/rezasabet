@@ -3,9 +3,9 @@ import { ChildrenProps } from '@/utils/types.util'
 
 const MainLayout = ({ children }: ChildrenProps) => {
   return (
-    <div className='full-screen flex flex-col'>
+    <div className='w-full'>
       <Header />
-      <main className='flex-1'>{children}</main>
+      <main>{children}</main>
     </div>
   )
 }

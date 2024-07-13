@@ -1,4 +1,14 @@
+import AboutSection from '@/app/_components/AboutSection'
+import HeroSection from '@/app/_components/HeroSection'
+import SkillsSections from '@/app/_components/SkillsSections'
+
 const HomePage = () => {
-  return <main className='full-screen flex-center'>Reza Sabet Personal Website</main>
+  return (
+    <>
+      <HeroSection />
+      <AboutSection />
+      <SkillsSections />
+    </>
+  )
 }
 export default HomePage

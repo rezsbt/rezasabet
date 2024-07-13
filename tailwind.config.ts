@@ -16,6 +16,12 @@ const config: Config = {
         padding: {
           DEFAULT: '1rem'
         }
+      },
+      spacing: {
+        header: '4rem'
+      },
+      padding: {
+        header: '6rem'
       }
     }
   },
@@ -23,9 +29,20 @@ const config: Config = {
   plugins: [
     nextui({
       defaultTheme: 'light',
+      layout: {
+        radius: {
+          small: '3px',
+          medium: '4px',
+          large: '7px'
+        }
+      },
       themes: {
         dark: {
           colors: {
+            background: {
+              '100': '#0C0C0C',
+              '200': '#000000'
+            },
             primary: {
               DEFAULT: '#ffffff',
               foreground: '#000000'
