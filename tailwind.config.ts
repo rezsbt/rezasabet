@@ -6,19 +6,33 @@ const config: Config = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/layout/**/*.{js,ts,jsx,tsx,mdx}',
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
   ],
-  theme: {},
+  theme: {
+    extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem'
+        }
+      }
+    }
+  },
   darkMode: 'class',
   plugins: [
     nextui({
       defaultTheme: 'light',
       themes: {
-        light: {
+        dark: {
           colors: {
             primary: {
-              DEFAULT: '#444C1C',
-              foreground: '#ffffff'
+              DEFAULT: '#ffffff',
+              foreground: '#000000'
+            },
+            secondary: {
+              DEFAULT: '#ffd60a',
+              foreground: '#000000'
             }
           }
         }

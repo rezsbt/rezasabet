@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { ChildrenProps } from '@/utils/types.util'
-import { interFont } from '@/configs/fonts.config'
+import { poppinsFont } from '@/configs/fonts.config'
 import '@/styles/globals.css'
 import Providers from '@/lib/providers/Providers'
 import MainLayout from '@/layout/Layout'
@@ -17,7 +17,7 @@ const RootLayout = ({ children }: ChildrenProps) => {
       <head>
         <link rel='icon' href='/favicon.ico' sizes='any' />
       </head>
-      <body className={interFont.className}>
+      <body className={poppinsFont.className}>
         <Providers>
           <MainLayout>{children}</MainLayout>
         </Providers>
