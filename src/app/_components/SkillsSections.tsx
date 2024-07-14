@@ -1,5 +1,5 @@
 import SectionTitle from '@/components/shared/SectionTitle'
-import { Card, CardBody, CardHeader, Divider, Progress } from '@nextui-org/react'
+import { Card, CardBody, CardHeader, Progress } from '@nextui-org/react'
 import React from 'react'
 import { uuid } from 'uuidv4'
 
