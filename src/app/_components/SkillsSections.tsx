@@ -91,6 +91,20 @@ const data: DataType[] = [
     ]
   },
   {
+    title: 'Application Development',
+    skills: [
+      {
+        name: 'ElectronJS',
+        skillLevel: 50
+      },
+      {
+        name: 'React Native',
+        skillLevel: 50
+      }
+    ]
+  },
+
+  {
     title: 'Graphic Tools',
     skills: [
       {

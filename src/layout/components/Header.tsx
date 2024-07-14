@@ -41,7 +41,7 @@ const Header = () => {
     else return pathname.includes(link)
   }
   return (
-    <header className='fixed z-50 w-full'>
+    <header className='fixed z-50 w-full border-b border-b-background-200/30 drop-shadow-lg backdrop-blur-sm'>
       <div className='flex-center container h-header'>
         <ul className='flex w-full items-center justify-center gap-6'>
           {navbarItems.map((item: NavbarItem) => (
