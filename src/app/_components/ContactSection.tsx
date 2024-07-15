@@ -90,7 +90,7 @@ const ContactSection = () => (
     <div className='container'>
       <SectionTitle>Let's Talk!</SectionTitle>
       {/* <p className='text-sm text-zinc-400'>{appData.contactSection.subtitle}</p> */}
-      <div className='mt-7 grid grid-cols-1 gap-5 sm:grid-cols-2'>
+      <div className='mt-7 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4'>
         {data.map((item: ContactCardType) => (
           <ContactCard key={item.title} {...item} />
         ))}
