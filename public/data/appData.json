@@ -1,0 +1,190 @@
+{
+  "heroSection": {
+    "subtitle": "I'm front-end web developer, application developer and Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, optio."
+  },
+  "aboutSection": {
+    "mainContent": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, quas ut minus quo ad tenetur debitis mollitia at harum laborum ullam sit, libero maxime deserunt iusto animi autem placeat velit ipsa adipisci tempore. Commodi dolores error ad aliquam, nulla, consequatur enim amet nihil esse autem tempore aspernatur eius in perspiciatis explicabo officiis. Esse asperiores quia ducimus reprehenderit commodi aperiam, eaque repudiandae eos officia labore, assumenda corporis. Reprehenderit commodi earum ipsum magni, dolore sunt aut quod unde in nobis similique inventore mollitia distinctio temporibus, iure perspiciatis illum. Quam soluta tempore cum, nostrum dolores suscipit, velit ut, eaque provident a facilis saepe."
+  },
+  "skillsSections": [
+    {
+      "title": "Foundamentals",
+      "skills": [
+        {
+          "name": "HTML/CSS/JS",
+          "skillLevel": 90
+        },
+        {
+          "name": "TypeScript",
+          "skillLevel": 90
+        },
+        {
+          "name": "NodeJS",
+          "skillLevel": 90
+        },
+        {
+          "name": "SCSS/SASS",
+          "skillLevel": 90
+        }
+      ]
+    },
+    {
+      "title": "Web Development",
+      "skills": [
+        {
+          "name": "ReactJS",
+          "skillLevel": 90
+        },
+        {
+          "name": "NextJS",
+          "skillLevel": 90
+        },
+        {
+          "name": "Redux/RTK",
+          "skillLevel": 70
+        },
+        {
+          "name": "Zustand",
+          "skillLevel": 80
+        }
+      ]
+    },
+    {
+      "title": "Ui Libraries",
+      "skills": [
+        {
+          "name": "TailWind",
+          "skillLevel": 90
+        },
+        {
+          "name": "Ant Design",
+          "skillLevel": 70
+        },
+        {
+          "name": "MUI",
+          "skillLevel": 70
+        },
+        {
+          "name": "Bootstrap",
+          "skillLevel": 70
+        },
+        {
+          "name": "NextUI",
+          "skillLevel": 90
+        }
+      ]
+    },
+    {
+      "title": "Application Development",
+      "skills": [
+        {
+          "name": "ElectronJS",
+          "skillLevel": 50
+        },
+        {
+          "name": "React Native",
+          "skillLevel": 50
+        }
+      ]
+    },
+    {
+      "title": "Graphic Tools",
+      "skills": [
+        {
+          "name": "Adobe Photoshop",
+          "skillLevel": 40
+        },
+        {
+          "name": "Adobe XD",
+          "skillLevel": 40
+        },
+        {
+          "name": "Figma",
+          "skillLevel": 60
+        }
+      ]
+    },
+    {
+      "title": "Other",
+      "skills": [
+        {
+          "name": "Python",
+          "skillLevel": 50
+        },
+        {
+          "name": "Linux",
+          "skillLevel": 40
+        },
+        {
+          "name": "Git/GitHub",
+          "skillLevel": 80
+        },
+        {
+          "name": "WordPress",
+          "skillLevel": 50
+        }
+      ]
+    }
+  ],
+  "experiencesSection": [
+    {
+      "companyName": "Sarvban",
+      "jobPosition": "Front-end Developer",
+      "date": "Apr 2022 - Jun 2023",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere qui earum facilis magnam harum doloremque sunt eos? Cupiditate, fugit. Eius minus nobis officiis culpa unde labore omnis, ut excepturi amet voluptates! Nostrum sed illum consequuntur dolores, laboriosam, rem cupiditate earum blanditiis saepe dolores, qui excepturi? Assumenda cumque aliquam modi",
+      "image": "/images/companies/sarvban-logo.png",
+      "link": "https://sarvban.com",
+      "linkLabel": "Sarvban"
+    },
+    {
+      "companyName": "Cafemive",
+      "jobPosition": "Front-end Developer",
+      "date": "Sep 2022 - Jul 2023",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere qui earum facilis magnam harum doloremque searum blanditiis saepe dolores, qui excepturi? Assumenda cumque aliquam modi",
+      "image": "/images/companies/cafemive-logo.png",
+      "link": "https://cafemive.com",
+      "linkLabel": "Cafemive"
+    },
+    {
+      "companyName": "GIG - Wira System Pouya",
+      "jobPosition": "Front-end Developer",
+      "date": "Jun 2023 - Present",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere qui earum facilis magnam harum doloremque sunt eos? Cupiditate, fugit. Eius minus nobis officiis culpa unde labore omnis, ut excepturi amet voluptates! Nostrum sed illum consequuntur dolores, laboriosam, rem cupiditate deleniti nemo temporre libero, harum impedit, at ut expedita suscipit aut adipisci repellat minima tempora earum blanditiis saepe dolores, qui excepturi? Assumenda cumque aliquam modi",
+      "image": "/images/companies/wira-logo.png",
+      "link": "https://wirapos.com/",
+      "linkLabel": "Wira System Pouya"
+    }
+  ],
+  "contactSection": {
+    "subtitle": "Interested in working together or have a question? Feel free to reach out. I'm here to help you turn your ideas into amazing digital realities. Looking forward to hearing from you soon!"
+  },
+  "ContactInfo": {
+    "location": {
+      "text": "Tehran, Iran",
+      "link": null
+    },
+    "call": {
+      "text": "+98 990 915 4032",
+      "link": "tel:+989909154032"
+    },
+    "email": {
+      "text": "rezsabet24@gmail.com",
+      "link": "mailto:rezsabet24@gamil.com"
+    },
+    "github": {
+      "text": "@rezsbt",
+      "link": "https://github.com/rezsbt"
+    },
+    "linkedin": {
+      "text": "@rsabet",
+      "link": "https://www.linkedin.com/in/rsabet"
+    },
+    "telegram": {
+      "text": "@callme01010010",
+      "link": "https://t.me/callme01010010"
+    },
+    "discord": {
+      "text": "Rez",
+      "link": "discordapp.com/users/915599643193258015"
+    }
+  }
+}

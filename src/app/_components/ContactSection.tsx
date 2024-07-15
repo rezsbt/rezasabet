@@ -3,10 +3,10 @@ import SectionTitle from '@/components/shared/SectionTitle'
 import { ReactIconProps } from '@/utils/types.util'
 import { Button, Link as NextUILink } from '@nextui-org/react'
 import Link from 'next/link'
-import React from 'react'
 import { IconType } from 'react-icons'
 import { FaPhone } from 'react-icons/fa'
-import { FaEnvelope, FaGithub, FaLinkedin, FaLocationDot, FaMessage, FaTelegram } from 'react-icons/fa6'
+import { FaDiscord, FaEnvelope, FaGithub, FaLinkedin, FaLocationDot, FaMessage, FaTelegram } from 'react-icons/fa6'
+import appData from 'Public/data/appData.json'
 
 // ** Type
 type ContactCardType = {
@@ -23,48 +23,49 @@ type SocialMediaType = {
 }
 
 // ** Data
-const contactSubtitle: string =
-  "Interested in working together or have a question? Feel free to reach out. I'm here to help you turn your ideas into amazing digital realities. Looking forward to hearing from you soon!"
 const socialMedia: SocialMediaType[] = [
   {
-    label: '@rezsbt',
-    link: 'https://github.com/rezsbt',
+    label: appData.ContactInfo.github.text,
+    link: appData.ContactInfo.github.link,
     icon: FaGithub
   },
   {
-    label: '@rsabet',
-    link: 'https://www.linkedin.com/in/rsabet',
+    label: appData.ContactInfo.linkedin.text,
+    link: appData.ContactInfo.linkedin.link,
     icon: FaLinkedin
   },
   {
-    label: '@callme01010010',
-    link: 't.me/callme01010010',
+    label: appData.ContactInfo.telegram.text,
+    link: appData.ContactInfo.telegram.link,
     icon: FaTelegram
+  },
+  {
+    label: appData.ContactInfo.discord.text,
+    link: appData.ContactInfo.discord.link,
+    icon: FaDiscord
   }
 ]
 const data: ContactCardType[] = [
   {
     title: 'Location',
     icon: FaLocationDot,
-
-    content: <span className='text-small'>Tehran, Iran</span>
+    content: <span className='text-small'>{appData.ContactInfo.location.text}</span>
   },
   {
     title: 'Call',
     icon: FaPhone,
     content: (
-      <NextUILink size='sm' underline='always' href='tel:+989909154032'>
-        +98 990 915 4032
+      <NextUILink size='sm' underline='always' href={appData.ContactInfo.call.link}>
+        {appData.ContactInfo.call.text}
       </NextUILink>
     )
   },
   {
     title: 'Email',
     icon: FaEnvelope,
-
     content: (
-      <NextUILink size='sm' underline='always' href='mailto:rezsabet24@gmail.com'>
-        rezsabet24@gmail.com
+      <NextUILink size='sm' underline='always' href={appData.ContactInfo.email.link}>
+        {appData.ContactInfo.email.text}
       </NextUILink>
     )
   },
@@ -88,8 +89,8 @@ const ContactSection = () => (
   <section className='bg-background-200 py-header'>
     <div className='container'>
       <SectionTitle>Let's Talk!</SectionTitle>
-      <p className='text-sm text-zinc-400'>{contactSubtitle}</p>
-      <div className='mt-7 grid grid-cols-1 gap-5'>
+      {/* <p className='text-sm text-zinc-400'>{appData.contactSection.subtitle}</p> */}
+      <div className='mt-7 grid grid-cols-1 gap-5 sm:grid-cols-2'>
         {data.map((item: ContactCardType) => (
           <ContactCard key={item.title} {...item} />
         ))}

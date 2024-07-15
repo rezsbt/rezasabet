@@ -1,24 +1,21 @@
-/* eslint-disable react/no-unescaped-entities */
 import HeroBackground from '@/app/_components/HeroBackground'
 import Logo from '@/components/shared/Logo'
-import { Button } from '@nextui-org/react'
+import { Button, Link as NextUILink } from '@nextui-org/react'
 import Link from 'next/link'
-import React from 'react'
+import { FaArrowDown } from 'react-icons/fa6'
+import appData from 'Public/data/appData.json'
 
 const HeroSection = () => {
   return (
-    <section className='bg-background-200 relative min-h-screen'>
+    <div className='relative bg-background-200'>
       <HeroBackground />
-      <section className='container relative flex min-h-screen flex-col items-center justify-center'>
+      <section className='container relative flex h-[100svh] flex-col items-center justify-center'>
         <Logo size='xl' color='primary' />
         <div className='mt-14 text-center'>
           <h1 className='text-5xl font-bold'>
-            Hi, I'm <span className='upper text-nowrap text-secondary'>Reza Sabet</span>
+            Hi, I&apos;m <span className='upper text-nowrap text-secondary'>Reza Sabet</span>
           </h1>
-          <p className='mt-5 text-medium text-neutral-400'>
-            I'm front-end web developer, application developer and Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Ratione, optio.
-          </p>
+          <p className='mx-auto mt-4 max-w-[550px] text-medium text-zinc-400'>{appData.heroSection.subtitle}</p>
           <Link href='/contact'>
             <Button variant='flat' color='secondary' className='mt-5' fullWidth>
               Contact
@@ -26,7 +23,17 @@ const HeroSection = () => {
           </Link>
         </div>
       </section>
-    </section>
+      <Button
+        className='absolute bottom-3 right-3'
+        color='secondary'
+        variant='light'
+        startContent={<FaArrowDown />}
+        as={NextUILink}
+        href='#about'
+      >
+        Learn More About Reza
+      </Button>
+    </div>
   )
 }
 
