@@ -1,9 +1,9 @@
 {
   "heroSection": {
-    "subtitle": "I'm front-end web developer, application developer and Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, optio."
+    "subtitle": "I’m a web developer, software developer, and also interested in the world of web and technology. Welcome to my website."
   },
   "aboutSection": {
-    "mainContent": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, quas ut minus quo ad tenetur debitis mollitia at harum laborum ullam sit, libero maxime deserunt iusto animi autem placeat velit ipsa adipisci tempore. Commodi dolores error ad aliquam, nulla, consequatur enim amet nihil esse autem tempore aspernatur eius in perspiciatis explicabo officiis. Esse asperiores quia ducimus reprehenderit commodi aperiam, eaque repudiandae eos officia labore, assumenda corporis. Reprehenderit commodi earum ipsum magni, dolore sunt aut quod unde in nobis similique inventore mollitia distinctio temporibus, iure perspiciatis illum. Quam soluta tempore cum, nostrum dolores suscipit, velit ut, eaque provident a facilis saepe."
+    "mainContent": "Hello! I am Raza, a front-end web developer, and I live in Iran. It has been 6 years since I started learning programming, and during this time I worked in person for some time and as a project for a while, which made me familiar with javascript and python languages. As I worked and my interest in automating repetitive tasks made me curious about some libraries. Finally, I found my penchant in creating a website to bring up pages for others to enjoy while working, and now I am eager to do so, and raise up the ideas in your head to the monitor screen. In addition, I am also interested in Backend and hope to be able to pursue this field more professionally in the future."
   },
   "skillsSections": [
     {
@@ -74,7 +74,7 @@
       ]
     },
     {
-      "title": "Application Development",
+      "title": "Software Development",
       "skills": [
         {
           "name": "ElectronJS",
@@ -130,7 +130,7 @@
       "companyName": "Sarvban",
       "jobPosition": "Front-end Developer",
       "date": "Apr 2022 - Jun 2023",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere qui earum facilis magnam harum doloremque sunt eos? Cupiditate, fugit. Eius minus nobis officiis culpa unde labore omnis, ut excepturi amet voluptates! Nostrum sed illum consequuntur dolores, laboriosam, rem cupiditate earum blanditiis saepe dolores, qui excepturi? Assumenda cumque aliquam modi",
+      "description": "I was employed at Sarvban, a company specializing in the trade of agricultural products. There, I worked on internal web applications for the trading and support departments. I also developed the “Mazraeban” website, a platform for managing and monitoring agricultural lands (via aerial photography) for farmers. Additionally, I was involved in the development of a website related to the buying and selling of agricultural products and its associated processes.",
       "image": "/images/companies/sarvban-logo.png",
       "link": "https://sarvban.com",
       "linkLabel": "Sarvban"
@@ -139,7 +139,7 @@
       "companyName": "Cafemive",
       "jobPosition": "Front-end Developer",
       "date": "Sep 2022 - Jul 2023",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere qui earum facilis magnam harum doloremque searum blanditiis saepe dolores, qui excepturi? Assumenda cumque aliquam modi",
+      "description": "I was working remotely with Cafe Mive, an online start-up store based in Karaj, specializing in the sale of fruits, vegetables, and generally fresh produce.",
       "image": "/images/companies/cafemive-logo.png",
       "link": "https://cafemive.com",
       "linkLabel": "Cafemive"
@@ -148,7 +148,7 @@
       "companyName": "GIG - Wira System Pouya",
       "jobPosition": "Front-end Developer",
       "date": "Jun 2023 - Present",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere qui earum facilis magnam harum doloremque sunt eos? Cupiditate, fugit. Eius minus nobis officiis culpa unde labore omnis, ut excepturi amet voluptates! Nostrum sed illum consequuntur dolores, laboriosam, rem cupiditate deleniti nemo temporre libero, harum impedit, at ut expedita suscipit aut adipisci repellat minima tempora earum blanditiis saepe dolores, qui excepturi? Assumenda cumque aliquam modi",
+      "description": "I'm employed at Wira System Pouya, a subsidiary of the Golrang Industrial Group, whose primary activity is the production and sale of retail software. My responsibilities in this company include developing web applications for the deploy and support team, developing software for restaurant kiosks, and waiter software for restaurants.",
       "image": "/images/companies/wira-logo.png",
       "link": "https://wirapos.com/",
       "linkLabel": "Wira System Pouya"
