@@ -169,7 +169,7 @@ const Skill = ({ name, skillLevel }: SkillProps) => (
       <span>{name}</span>
       <span>{skillLevel}%</span>
     </div>
-    <Progress value={skillLevel} size='sm' color='secondary' />
+    <Progress value={skillLevel} size='sm' color='secondary' aria-label={name} />
   </div>
 )
 

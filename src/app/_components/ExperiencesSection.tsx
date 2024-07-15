@@ -38,7 +38,7 @@ const data: ExperienceType[] = [
     linkLabel: 'Cafemive'
   },
   {
-    companyName: 'Wira System Pouya',
+    companyName: 'GIG - Wira System Pouya',
     jobPosition: 'Front-end Developer',
     date: 'Jun 2023 - Present',
     description:
@@ -64,13 +64,13 @@ const ExperiencesSection = () => {
   )
 }
 
-const ExperienceCard = ({ companyName, jobPosition, date, description, link, linkLabel, image }: ExperienceType) => (
+const ExperienceCard = ({ companyName, date, description, link, image }: ExperienceType) => (
   <Card className='p-3'>
     <CardHeader className='gap-3'>
       <div className='flex-center aspect-square h-full rounded-medium bg-zinc-800'>
         {!!image && (
           <div className='relative h-2/3 w-2/3'>
-            <Image src={image} alt='companyName' fill objectFit='contain' className='grayscale' />
+            <Image src={image} alt='companyName' fill className='object-contain grayscale' />
           </div>
         )}
       </div>
@@ -85,7 +85,7 @@ const ExperienceCard = ({ companyName, jobPosition, date, description, link, lin
     <CardFooter className='w-full'>
       <Link href={link} className='w-full' target='_blank'>
         <Button variant='flat' color='secondary' fullWidth>
-          Visit {linkLabel}
+          Visit {companyName}
         </Button>
       </Link>
     </CardFooter>
