@@ -20,7 +20,7 @@ const ExperiencesSection = () => {
   return (
     <section className='bg-background-100 py-header'>
       <div className='container'>
-        <SectionTitle>Experinces</SectionTitle>
+        <SectionTitle>Experiences</SectionTitle>
         <div className='grid grid-cols-1 gap-5 md:grid-cols-2'>
           {appData.experiencesSection.map((item: ExperienceType) => (
             <ExperienceCard key={uuid()} {...item} />

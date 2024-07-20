@@ -3,7 +3,6 @@ import { ChildrenProps } from '@/utils/types.util'
 import { poppinsFont } from '@/configs/fonts.config'
 import '@/styles/globals.css'
 import Providers from '@/lib/providers/Providers'
-import MainLayout from '@/layout/Layout'
 
 // ** Meta
 export const metadata: Metadata = {
@@ -18,9 +17,7 @@ const RootLayout = ({ children }: ChildrenProps) => {
         <link rel='icon' href='/favicon.ico' sizes='any' />
       </head>
       <body className={poppinsFont.className}>
-        <Providers>
-          <MainLayout>{children}</MainLayout>
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

@@ -1,4 +1,4 @@
-import HeroBackground from '@/app/_components/HeroBackground'
+import HeroBackground from '@/app/(www)/_components/HeroBackground'
 import Logo from '@/components/shared/Logo'
 import { Button, Link as NextUILink } from '@nextui-org/react'
 import Link from 'next/link'
