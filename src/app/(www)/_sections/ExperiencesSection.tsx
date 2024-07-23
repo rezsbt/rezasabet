@@ -1,9 +1,13 @@
+'use client'
+
 import SectionTitle from '@/components/shared/SectionTitle'
 import { Button, Card, CardBody, CardFooter, CardHeader, Divider } from '@nextui-org/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { uuid } from 'uuidv4'
 import appData from 'Public/data/appData.json'
+import { motion } from 'framer-motion'
+import { inViewAnimation } from '@/utils/animation.util'
 
 // ** Types
 type ExperienceType = {
@@ -15,6 +19,9 @@ type ExperienceType = {
   link: string
   linkLabel: string
 }
+
+// ** Components
+const CardMotion = motion(Card)
 
 const ExperiencesSection = () => {
   return (
@@ -32,7 +39,7 @@ const ExperiencesSection = () => {
 }
 
 const ExperienceCard = ({ companyName, date, description, link, image }: ExperienceType) => (
-  <Card className='p-3'>
+  <CardMotion {...inViewAnimation} className='p-3'>
     <CardHeader className='gap-3'>
       <div className='flex-center aspect-square h-full rounded-medium bg-zinc-800'>
         {!!image && (
@@ -56,7 +63,7 @@ const ExperienceCard = ({ companyName, date, description, link, image }: Experie
         </Button>
       </Link>
     </CardFooter>
-  </Card>
+  </CardMotion>
 )
 
 export default ExperiencesSection

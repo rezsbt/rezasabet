@@ -1,8 +1,12 @@
+'use client'
+
 import SectionTitle from '@/components/shared/SectionTitle'
 import { Card, CardBody, CardHeader, Progress } from '@nextui-org/react'
 import React from 'react'
 import { uuid } from 'uuidv4'
 import appData from 'Public/data/appData.json'
+import { motion } from 'framer-motion'
+import { inViewAnimation } from '@/utils/animation.util'
 
 // ** Types
 type SkillProps = {
@@ -21,6 +25,9 @@ type DataType = {
   title: string
   skills: SkillType[]
 }
+
+// ** Components
+const CardMotion = motion(Card)
 
 const SkillsSections = () => {
   return (
@@ -52,12 +59,12 @@ const Skill = ({ name, skillLevel }: SkillProps) => (
 )
 
 const SkillGroup = ({ children, title }: SkillGroupProps) => (
-  <Card className='p-3'>
+  <CardMotion {...inViewAnimation} className='p-3'>
     <CardHeader>
       <h4 className='text-large'>{title}</h4>
     </CardHeader>
     <CardBody className='space-y-4'>{children}</CardBody>
-  </Card>
+  </CardMotion>
 )
 
 export default SkillsSections

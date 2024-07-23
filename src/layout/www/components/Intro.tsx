@@ -31,7 +31,7 @@ const Intro = ({ setShowIntro, showIntro }: Props) => {
       onAnimationComplete={() => setShowIntro(false)}
       className={classNames(
         'flex-center left-0 top-0 h-screen w-full bg-background-200',
-        showIntro ? 'fixed' : 'hidden'
+        showIntro ? 'fixed' : '!hidden'
       )}
     >
       <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={logoTransition}>

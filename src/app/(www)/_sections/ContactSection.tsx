@@ -1,3 +1,5 @@
+'use client'
+
 /* eslint-disable react/no-unescaped-entities */
 import SectionTitle from '@/components/shared/SectionTitle'
 import { ReactIconProps } from '@/utils/types.util'
@@ -7,6 +9,8 @@ import { IconType } from 'react-icons'
 import { FaPhone } from 'react-icons/fa'
 import { FaDiscord, FaEnvelope, FaGithub, FaLinkedin, FaLocationDot, FaMessage, FaTelegram } from 'react-icons/fa6'
 import appData from 'Public/data/appData.json'
+import { motion } from 'framer-motion'
+import { inViewAnimation } from '@/utils/animation.util'
 
 // ** Type
 type ContactCardType = {
@@ -100,10 +104,13 @@ const ContactSection = () => (
 )
 
 const ContactCard = ({ iconProps, content, ...props }: ContactCardType) => (
-  <article className='flex h-36 flex-col items-center justify-center gap-7 rounded-small border border-zinc-700 p-7 text-sm font-light'>
+  <motion.article
+    {...inViewAnimation}
+    className='flex h-36 flex-col items-center justify-center gap-7 rounded-small border border-zinc-700 p-7 text-sm font-light'
+  >
     <props.icon {...iconProps} className='text-[20px] text-zinc-400' />
     {content}
-  </article>
+  </motion.article>
 )
 
 export default ContactSection
