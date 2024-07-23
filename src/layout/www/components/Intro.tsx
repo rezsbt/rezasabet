@@ -11,14 +11,14 @@ type Props = {
 }
 
 // ** Animation
-const logoTransition: Transition = {
-  duration: 0.75,
-  delay: 0.25,
-  ease: 'easeOut'
-}
+// const logoTransition: Transition = {
+//   duration: 0.75,
+//   delay: 0.25,
+//   ease: 'easeOut'
+// }
 const containerTransition: Transition = {
   duration: 0.5,
-  delay: 1,
+  delay: 0.5,
   ease: 'easeOut'
 }
 
@@ -34,9 +34,9 @@ const Intro = ({ setShowIntro, showIntro }: Props) => {
         showIntro ? 'fixed' : '!hidden'
       )}
     >
-      <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={logoTransition}>
+      {/* <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={logoTransition}>
         <Logo size='xl' />
-      </motion.span>
+      </motion.span> */}
     </motion.section>
   )
 }

@@ -30,7 +30,7 @@ const GoToAbout = () => {
       href='#about'
       style={{ opacity }}
     >
-      Learn More About Me
+      About Me
     </ButtonMotion>
   )
 }
