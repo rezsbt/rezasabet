@@ -18,7 +18,7 @@ const HeroSection = () => {
         <Logo size='xl' color='primary' />
         <div className='mt-14 text-center'>
           <h1 className='text-5xl font-bold'>
-            {/* Hi, I&apos;m <span className='upper text-nowrap text-secondary'>Reza Sabet</span> */}
+            Hi, I&apos;m <span className='upper text-nowrap text-secondary'>Reza Sabet</span>
           </h1>
           <p className='mx-auto mt-3 max-w-[550px] text-medium text-zinc-400'>{appData.heroSection.subtitle}</p>
           <Link href='/contact'>
