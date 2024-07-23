@@ -28,16 +28,6 @@ const HeroSection = () => {
           </Link>
         </div>
       </section>
-      {/* <Button
-        className='absolute bottom-3 right-3'
-        color='secondary'
-        variant='light'
-        startContent={<FaArrowDown />}
-        as={NextUILink}
-        href='#about'
-      >
-        Learn More About Me
-      </Button> */}
       <GoToAbout />
     </div>
   )
