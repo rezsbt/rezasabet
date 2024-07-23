@@ -1,8 +1,8 @@
-import AboutSection from '@/app/(www)/_components/AboutSection'
-import ContactSection from '@/app/(www)/_components/ContactSection'
-import ExperiencesSection from '@/app/(www)/_components/ExperiencesSection'
-import HeroSection from '@/app/(www)/_components/HeroSection'
-import SkillsSections from '@/app/(www)/_components/SkillsSections'
+import AboutSection from '@/app/(www)/_sections/AboutSection'
+import ContactSection from '@/app/(www)/_sections/ContactSection'
+import ExperiencesSection from '@/app/(www)/_sections/ExperiencesSection'
+import HeroSection from '@/app/(www)/_sections/HeroSection'
+import SkillsSections from '@/app/(www)/_sections/SkillsSections'
 
 const HomePage = () => {
   return (
