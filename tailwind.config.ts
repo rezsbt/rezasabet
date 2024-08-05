@@ -18,10 +18,8 @@ const config: Config = {
         }
       },
       spacing: {
-        header: '4rem'
-      },
-      padding: {
-        header: '6rem'
+        header: '4rem',
+        footer: '4rem'
       }
     }
   },

@@ -7,13 +7,14 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
 const Footer = () => {
   return (
     <footer className='container'>
-      <div className='mx-auto h-px w-3/4 bg-zinc-800 sm:w-full'></div>
-      <p className='my-5 text-center text-tiny text-zinc-400'>
-        Designer & Built by{' '}
-        <Link href={baseUrl} className='text-tiny text-secondary'>
-          Reza Sabet
-        </Link>
-      </p>
+      <div className='h-footer flex items-center justify-center'>
+        <p className='text-center text-tiny text-zinc-400'>
+          Designed & Built by{' '}
+          <Link href={baseUrl} className='text-tiny text-secondary'>
+            Reza Sabet
+          </Link>
+        </p>
+      </div>
     </footer>
   )
 }

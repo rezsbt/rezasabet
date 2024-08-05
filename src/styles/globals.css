@@ -17,3 +17,9 @@
     @apply min-h-screen w-full;
   }
 }
+
+@layer components {
+  .h-not-found {
+    height: calc(100vh - theme('spacing.footer'));
+  }
+}
