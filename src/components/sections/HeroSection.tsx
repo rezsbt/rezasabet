@@ -21,7 +21,7 @@ const HeroSection = () => {
             Hi, I&apos;m <span className='upper text-nowrap text-secondary'>Reza Sabet</span>
           </h1>
           <p className='mx-auto mt-3 max-w-[550px] text-medium text-zinc-400'>{appData.heroSection.subtitle}</p>
-          <Link href='/contact'>
+          <Link href='#contact'>
             <Button variant='flat' color='secondary' className='mt-5' fullWidth>
               Contact
             </Button>

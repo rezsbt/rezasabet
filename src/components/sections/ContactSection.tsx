@@ -90,7 +90,7 @@ const data: ContactCardType[] = [
 ]
 
 const ContactSection = () => (
-  <section className='bg-background-100 py-header'>
+  <section className='bg-background-100 py-header' id='contact'>
     <div className='container'>
       <SectionTitle>Let's Talk!</SectionTitle>
       {/* <p className='text-sm text-zinc-400'>{appData.contactSection.subtitle}</p> */}
