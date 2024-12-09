@@ -1,4 +1,4 @@
-import { nextui } from '@nextui-org/react'
+import { nextui, colors } from '@nextui-org/react'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -46,17 +46,8 @@ const config: Config = {
               foreground: '#000000'
             },
             secondary: {
-              DEFAULT: '#ffd60a',
-              foreground: '#000000',
-              '100': '#f0db8d',
-              '200': '#edd578',
-              '300': '#ebce5f',
-              '400': '#e8c842',
-              '500': '#ffd60a',
-              '600': '#c8a707',
-              '700': '#ab8f05',
-              '800': '#8e7703',
-              '900': '#735f02'
+              DEFAULT: '#f43f5e',
+              foreground: '#000000'
             }
           }
         }

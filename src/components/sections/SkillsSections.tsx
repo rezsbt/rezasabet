@@ -26,9 +26,6 @@ type DataType = {
   skills: SkillType[]
 }
 
-// ** Components
-const CardMotion = motion(Card)
-
 const SkillsSections = () => {
   return (
     <section className='bg-background-200 py-header'>
@@ -59,12 +56,10 @@ const Skill = ({ name, skillLevel }: SkillProps) => (
 )
 
 const SkillGroup = ({ children, title }: SkillGroupProps) => (
-  <CardMotion {...inViewAnimation} className='p-3'>
-    <CardHeader>
-      <h4 className='text-large'>{title}</h4>
-    </CardHeader>
-    <CardBody className='space-y-4'>{children}</CardBody>
-  </CardMotion>
+  <motion.div {...inViewAnimation} className='card py-10'>
+    <h4 className='mb-4 text-large'>{title}</h4>
+    <div className='space-y-4'>{children}</div>
+  </motion.div>
 )
 
 export default SkillsSections

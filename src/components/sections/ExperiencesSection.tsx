@@ -39,7 +39,7 @@ const ExperiencesSection = () => {
 }
 
 const ExperienceCard = ({ companyName, date, description, link, image }: ExperienceType) => (
-  <CardMotion {...inViewAnimation} className='p-3'>
+  <CardMotion {...inViewAnimation} className='card p-3'>
     <CardHeader className='gap-3'>
       <div className='flex-center aspect-square h-full rounded-medium bg-zinc-800'>
         {!!image && (

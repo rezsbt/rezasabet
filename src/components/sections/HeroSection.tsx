@@ -1,12 +1,12 @@
 'use client'
 
-import HeroBackground from '@/app/(www)/_components/HeroBackground'
+import HeroBackground from '@/components/shared/HeroBackground'
 import Logo from '@/components/shared/Logo'
 import { Button, Link as NextUILink } from '@nextui-org/react'
 import Link from 'next/link'
 import { FaArrowDown } from 'react-icons/fa6'
 import appData from 'Public/data/appData.json'
-import GoToAbout from '@/app/(www)/_components/GoToAbout'
+import GoToAbout from '@/components/shared/GoToAbout'
 
 const HeroSection = () => {
   // ** Effects

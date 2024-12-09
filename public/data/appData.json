@@ -1,10 +1,27 @@
 {
   "heroSection": {
-    "subtitle": "I’m a web developer, software developer, and also interested in the world of web and technology. Welcome to my website."
+    "subtitle": "I’m a software engineer and web developer, and also interested in the world of web and technology. Welcome to my website."
   },
   "aboutSection": {
     "mainContent": "Hello! I am Raza, a front-end web developer, and I live in Iran. It has been 6 years since I started learning programming, and during this time I worked in person for some time and as a project for a while, which made me familiar with javascript and python languages. As I worked and my interest in automating repetitive tasks made me curious about some libraries. Finally, I found my penchant in creating a website to bring up pages for others to enjoy while working, and now I am eager to do so, and raise up the ideas in your head to the monitor screen. In addition, I am also interested in Backend and hope to be able to pursue this field more professionally in the future."
   },
+  "servicesSection": [
+    {
+      "title": "Web Development",
+      "description": "Offering website design following SEO standards and optimal design principles. Aiming to attract and engage visitors while improving search engine rankings. Providing an enhanced user experience and visitor satisfaction.",
+      "icon": "TbCode"
+    },
+    {
+      "title": "Digital Business Analysis",
+      "description": "Providing admin panel development based on business analysis. Creating custom and efficient panels to improve operations. Covering everything from data management to reporting and user control.",
+      "icon": "TbDeviceAnalytics"
+    },
+    {
+      "title": "Cross-Platform Application",
+      "description": "Developing cross-platform panels with responsive design standards. Designing and building panels that work seamlessly across all devices. Ensuring a consistent and smooth user experience for everyone.",
+      "icon": "TbAppWindow"
+    }
+  ],
   "skillsSections": [
     {
       "title": "Foundamentals",
@@ -45,6 +62,10 @@
         {
           "name": "Zustand",
           "skillLevel": 80
+        },
+        {
+          "name": "ExpressJS",
+          "skillLevel": 80
         }
       ]
     },
@@ -57,11 +78,11 @@
         },
         {
           "name": "Ant Design",
-          "skillLevel": 70
+          "skillLevel": 80
         },
         {
           "name": "MUI",
-          "skillLevel": 70
+          "skillLevel": 80
         },
         {
           "name": "Bootstrap",
