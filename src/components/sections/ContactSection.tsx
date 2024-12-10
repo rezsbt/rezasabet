@@ -11,20 +11,7 @@ import { FaDiscord, FaEnvelope, FaGithub, FaLinkedin, FaLocationDot, FaMessage, 
 import appData from 'Public/data/appData.json'
 import { motion } from 'framer-motion'
 import { inViewAnimation } from '@/utils/animation.util'
-
-// ** Type
-type ContactCardType = {
-  title: string
-  icon: IconType
-  iconProps?: ReactIconProps
-  content: React.ReactNode
-}
-type SocialMediaType = {
-  label: string
-  link: string
-  icon: IconType
-  iconProps?: ReactIconProps
-}
+import { ContactType, SocialMediaType } from '@/types'
 
 // ** Data
 const socialMedia: SocialMediaType[] = [
@@ -49,7 +36,7 @@ const socialMedia: SocialMediaType[] = [
     icon: FaDiscord
   }
 ]
-const data: ContactCardType[] = [
+const data: ContactType[] = [
   {
     title: 'Location',
     icon: FaLocationDot,
@@ -93,9 +80,8 @@ const ContactSection = () => (
   <section className='bg-background-100 py-header' id='contact'>
     <div className='container'>
       <SectionTitle>Let's Talk!</SectionTitle>
-      {/* <p className='text-sm text-zinc-400'>{appData.contactSection.subtitle}</p> */}
       <div className='mt-7 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4'>
-        {data.map((item: ContactCardType) => (
+        {data.map((item: ContactType) => (
           <ContactCard key={item.title} {...item} />
         ))}
       </div>
@@ -103,14 +89,11 @@ const ContactSection = () => (
   </section>
 )
 
-const ContactCard = ({ iconProps, content, ...props }: ContactCardType) => (
-  <motion.article
-    {...inViewAnimation}
-    className='flex h-36 flex-col items-center justify-center gap-7 rounded-small border border-zinc-700 p-7 text-sm font-light'
-  >
+const ContactCard = ({ iconProps, content, ...props }: ContactType) => (
+  <article className='flex h-36 flex-col items-center justify-center gap-7 rounded-small border border-zinc-700 p-7 text-sm font-light'>
     <props.icon {...iconProps} className='text-[20px] text-zinc-400' />
     {content}
-  </motion.article>
+  </article>
 )
 
 export default ContactSection

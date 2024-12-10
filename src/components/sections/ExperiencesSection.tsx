@@ -1,27 +1,10 @@
-'use client'
-
 import SectionTitle from '@/components/shared/SectionTitle'
-import { Button, Card, CardBody, CardFooter, CardHeader, Divider } from '@nextui-org/react'
+import { Button, CardBody, Card as NextUICard, CardFooter, CardHeader } from '@nextui-org/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { uuid } from 'uuidv4'
 import appData from 'Public/data/appData.json'
-import { motion } from 'framer-motion'
-import { inViewAnimation } from '@/utils/animation.util'
-
-// ** Types
-type ExperienceType = {
-  companyName: string
-  jobPosition: string
-  date: string
-  image?: string
-  description: string
-  link: string
-  linkLabel: string
-}
-
-// ** Components
-const CardMotion = motion(Card)
+import { ExperienceType } from '@/types'
 
 const ExperiencesSection = () => {
   return (
@@ -30,7 +13,7 @@ const ExperiencesSection = () => {
         <SectionTitle>Experiences</SectionTitle>
         <div className='grid grid-cols-1 gap-5 md:grid-cols-2'>
           {appData.experiencesSection.map((item: ExperienceType) => (
-            <ExperienceCard key={uuid()} {...item} />
+            <Card key={uuid()} {...item} />
           ))}
         </div>
       </div>
@@ -38,13 +21,13 @@ const ExperiencesSection = () => {
   )
 }
 
-const ExperienceCard = ({ companyName, date, description, link, image }: ExperienceType) => (
-  <CardMotion {...inViewAnimation} className='card p-3'>
+const Card = ({ companyName, date, description, link, image }: ExperienceType) => (
+  <NextUICard className='card p-3'>
     <CardHeader className='gap-3'>
       <div className='flex-center aspect-square h-full rounded-medium bg-zinc-800'>
         {!!image && (
-          <div className='relative h-2/3 w-2/3'>
-            <Image src={image} alt='companyName' fill className='object-contain grayscale' />
+          <div className='relative h-14 w-14'>
+            <Image src={image} alt='companyName' fill className='object-contain p-3 grayscale' />
           </div>
         )}
       </div>
@@ -63,7 +46,7 @@ const ExperienceCard = ({ companyName, date, description, link, image }: Experie
         </Button>
       </Link>
     </CardFooter>
-  </CardMotion>
+  </NextUICard>
 )
 
 export default ExperiencesSection

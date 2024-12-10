@@ -1,16 +1,11 @@
-'use client'
-
 import HeroBackground from '@/components/shared/HeroBackground'
 import Logo from '@/components/shared/Logo'
-import { Button, Link as NextUILink } from '@nextui-org/react'
+import { Button } from '@nextui-org/react'
 import Link from 'next/link'
-import { FaArrowDown } from 'react-icons/fa6'
 import appData from 'Public/data/appData.json'
 import GoToAbout from '@/components/shared/GoToAbout'
 
 const HeroSection = () => {
-  // ** Effects
-
   return (
     <div className='relative bg-background-200'>
       <HeroBackground />
@@ -22,7 +17,7 @@ const HeroSection = () => {
           </h1>
           <p className='mx-auto mt-3 max-w-[550px] text-medium text-zinc-400'>{appData.heroSection.subtitle}</p>
           <Link href='#contact'>
-            <Button variant='flat' color='secondary' className='mt-5' fullWidth>
+            <Button variant='flat' color='secondary' className='mt-5 w-full px-10 md:w-fit'>
               Contact
             </Button>
           </Link>

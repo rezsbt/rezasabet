@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from '@nextui-org/react'
 import classNames from 'classnames'
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
